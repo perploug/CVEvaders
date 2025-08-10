@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
+    <title>Dumb booth game for DHI</title>
+    <link rel="stylesheet" href="space.css" />
+    <script src="space.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="game">
+        <canvas id="board"></canvas>
+        <div id="hint"></div>
+      </div>
+
+      <div id="start">
+        <h1>CVEvaders!</h1>
+        <p>
+          Fight off the open CVEs hidden inside a container image, using as
+          little dev time as possible
+        </p>
+
+        <select onchange="selectImage(this)">
+          <option value="" selected>Choose your opponent</option>
+          <option value="redis">redis:latest</option>
+          <option value="node">node:latest</option>
+        </select>
+
+        <div id="'oppenent-wrapper" style="padding: 30px">
+          <div
+            id="opponent"
+            style="float: left; width: 45%; margin-right: 5%"
+          ></div>
+          <div
+            id="opponent-hardened"
+            style="border-left: 3px solid green; width: 45%; float: left"
+          ></div>
+
+          <button onclick="start()" style="clear: both">START</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

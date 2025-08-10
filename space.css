@@ -1,0 +1,52 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    -webkit-font-smoothing: none;
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+}
+
+#game {
+    border: 3px solid #fff;
+    background-color: black;
+    padding: 5px;
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select, button{
+    background-color: #000;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    padding: 10px;    
+    margin: 10px
+}
+
+#start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 480px;
+    border: 3px solid greenyellow;
+    padding: 30px;
+}
+
+.cves span{color: black; display: inline-block; 0 4px 0 4px }
+span.c{background: lightcoral}
+span.h{background: lightsalmon}
+span.m{background: lightgoldenrodyellow}
+span.l{background: white}
